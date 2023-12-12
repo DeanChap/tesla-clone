@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState} from "react";
+import { TfiClose } from "react-icons/tfi";
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false)
+
+  const handleNav = () => {
+    setNav(!nav)
+  }
+
   return (
     <div className="flex justify-between items-center px-12 p-4 text-sm font-bold">
       <div>
@@ -44,16 +51,54 @@ const Navbar = () => {
           <li className="py-1 px-3 text-white hover:rounded hover:bg-black/5 transition duration-10000 ease-in-out">
             Account
           </li>
-          <li className="py-1 px-3 text-white hover:rounded hover:bg-black/5 transition duration-10000 ease-in-out">
+          <li onClick={handleNav} className="py-1 px-3 text-white hover:rounded hover:bg-black/5 transition duration-10000 ease-in-out">
             Menu
           </li>
         </ul>
       </div>
 
       <div className="lg:hidden text-white">
-        <button className="inline-flex items-center rounded-md py-2 px-4 text-sm font-medium bg-black/5 shadow-sm hover:bg-black/10">
+        <button onClick={handleNav} className="inline-flex items-center rounded-md py-2 px-4 text-sm font-medium bg-black/5 shadow-sm hover:bg-black/10">
           Menu
         </button>
+      </div>
+
+      <div className={nav ? "bg-white absolute top-0 right-0 w-80 h-full z-10" : "fixed right-[100%]"}>
+        <div className="flex justify-end pr-8 pt-8">
+          <TfiClose
+            onClick={handleNav}
+            className="rounded p-1 hover:bg-black/5 cursor-pointer"
+            size={24}
+          />
+        </div>
+
+        <ul className="pt-8 px-6 cursor-pointer transition ease-in-out duration-100">
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            <a href="https://www.tesla.com/en_ca/models">Model S</a>
+          </li>
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            <a href="https://www.tesla.com/en_ca/model3">Model 3</a>
+          </li>
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            <a href="https://www.tesla.com/en_ca/modelx">Model X</a>
+          </li>
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            <a href="https://www.tesla.com/en_ca/modely">Model Y</a>
+          </li>
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            <a href="https://www.tesla.com/en_ca/energy">Solar and Powerwall</a>
+          </li>
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            <a href="https://www.tesla.com/en_CA/inventory/new/my">Existing invetory</a>
+          </li>
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            <a href="https://www.tesla.com/en_ca/powerwall">Powerwall</a>
+          </li>
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            <a href="https://www.tesla.com/en_ca/drive">Demo Drive</a>
+          </li>
+        </ul>
+        
       </div>
     </div>
   );
