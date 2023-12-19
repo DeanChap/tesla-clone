@@ -1,16 +1,13 @@
-import Model from "./components/Model";
+import React from "react";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+
 
 function App() {
   return (
-    <div
-      className="
-      bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-NA.jpg')] 
-      lg:bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-NA.jpg')] 
-      h-screen bg-cover bg-center "
-    >
+    <div>
       <Navbar />
-      <Model />
+      <Home />
     </div>
   );
 }

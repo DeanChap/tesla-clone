@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center px-12 p-4 text-sm font-bold">
+    <div className="fixed w-full flex justify-between items-center px-12 p-4 text-sm font-bold z-20">
 
       {/* Logo */}
 
@@ -81,11 +81,11 @@ const Navbar = () => {
       {/* Mobile menu */}
 
       <div
-        className={
+        className={`${
           nav
-            ? "bg-white fixed top-0 right-0 w-80 h-full z-10"
+            ? "bg-white fixed top-0 right-0 w-80 h-full z-50"
             : "fixed right-[100%]"
-        }
+        } transition duration-300 ease-in-out`}
       >
         <div className="flex justify-end pr-8 pt-8">
           <TfiClose
@@ -95,7 +95,7 @@ const Navbar = () => {
           />
         </div>
 
-        <ul className="pt-8 px-6 cursor-pointer transition ease-in-out duration-100">
+        <ul className="pt-8 px-6 cursor-pointer transition ease-in-out duration-50">
           <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
             <a href="https://www.tesla.com/en_ca/models">Model S</a>
           </li>
