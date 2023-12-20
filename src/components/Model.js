@@ -1,4 +1,3 @@
-// Model.js
 import React from "react";
 import { FiChevronDown } from "react-icons/fi";
 
