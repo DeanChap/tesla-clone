@@ -31,10 +31,10 @@ const Navbar = () => {
             <a href="https://www.tesla.com/en_ca/models">Model S</a>
           </li>
           <li className="py-1 px-3 hover:rounded hover:bg-black/5 hover:brightness-0 transition duration-10000 ease-in-out">
-            <a href="https://www.tesla.com/en_ca/model3">Model X</a>
+            <a href="https://www.tesla.com/en_ca/modelx">Model X</a>
           </li>
           <li className="py-1 px-3 hover:rounded hover:bg-black/5 hover:brightness-0 transition duration-10000 ease-in-out">
-            <a href="https://www.tesla.com/en_ca/modelx">Model 3</a>
+            <a href="https://www.tesla.com/en_ca/model3">Model 3</a>
           </li>
           <li className="py-1 px-3 hover:rounded hover:bg-black/5 hover:brightness-0 transition duration-10000 ease-in-out">
             <a href="https://www.tesla.com/en_ca/modely">Model Y</a>
