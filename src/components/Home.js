@@ -3,7 +3,7 @@ import Model from './Model'
 
 const Home = () => {
   return (
-    <div className='h-screen w-screen'>
+    <div className='h-screen w-screen snap-y snap-mandatory overflow-y-scroll'>
       <Model 
         title="Model 3"
         leftBtn="Explore Inventory"

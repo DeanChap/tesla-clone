@@ -4,7 +4,7 @@ import { FiChevronDown } from "react-icons/fi";
 const Model = ({ title, description, leftBtn, rightBtn }) => {
   return (
     <div 
-      className="relative flex flex-col justify-between items-center h-screen bg-cover bg-center 
+      className="relative flex flex-col justify-between items-center h-screen bg-cover bg-center snap-start snap-always shrink-0
       bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-NA.jpg')] 
       lg:bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-NA.jpg')]" 
     >
