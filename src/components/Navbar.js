@@ -100,16 +100,16 @@ const Navbar = () => {
             <a href="https://www.tesla.com/en_ca/models">Model S</a>
           </li>
           <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
-            <a href="https://www.tesla.com/en_ca/model3">Model 3</a>
+            <a href="https://www.tesla.com/en_ca/modelx">Model X</a>
           </li>
           <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
-            <a href="https://www.tesla.com/en_ca/modelx">Model X</a>
+            <a href="https://www.tesla.com/en_ca/model3">Model 3</a>
           </li>
           <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
             <a href="https://www.tesla.com/en_ca/modely">Model Y</a>
           </li>
           <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
-            <a href="https://www.tesla.com/en_ca/energy">Solar and Powerwall</a>
+            <a href="https://www.tesla.com/en_ca/cybertruck">CyberTruck</a>
           </li>
           <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
             <a href="https://www.tesla.com/en_CA/inventory/new/my">
@@ -117,7 +117,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
-            <a href="https://www.tesla.com/en_ca/powerwall">Powerwall</a>
+            <a href="https://www.tesla.com/en_ca/powerwall">Solar and Powerwall</a>
           </li>
           <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
             <a href="https://www.tesla.com/en_ca/drive">Demo Drive</a>
